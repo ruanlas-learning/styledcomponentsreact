@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Head, Titulo, BemVindo } from './styles';
+// import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Container>
+        <Head>
+          <Titulo>Projeto Styled</Titulo>
+        </Head>
+        <BemVindo cor="00FF00" tamanho={15}>
+          Bem vindo ao sistema
+        </BemVindo>
+      </Container>
     );
   }
 }
 
 export default App;
+
+
+/*
+  <div className="container">
+    <header className="header">
+      <a className="titulo">Projeto Styled</a>
+    </header>
+    <h1>Bem vindo ao sistema!</h1>
+  </div>
+*/
